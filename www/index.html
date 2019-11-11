@@ -36,7 +36,7 @@
       TestClass.fetch()
       .then(function(results){
         var data=results.get("text");
-        var update=results.get("updatteDate");
+        var update=results.get("updateDate");
         $("#message").html(data + ":" + update);
       })
     }
@@ -51,6 +51,7 @@
   <div id="button">
     <button id="btnA" class="btn" onclick="register()">Register</button>
     <button id = "btnB" class = "btn" onclick = "fetch()">Fetch</button>
+    <button id="btnC" class="btn" onclick="fetchAll()">Fetch All</button>
   </div>
   <div id="message">message area</div>
 </body>
